@@ -1,8 +1,0 @@
-name = Luke Piette
-title = Cofounder at BingBangBong
-date_note_title = June 7th
-time_since = 28
-meeting_day_spec = calendar days
-
-
-width: 179px (red level)
