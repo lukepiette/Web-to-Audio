@@ -1,0 +1,93 @@
+#id-hover-1 {
+}
+
+#id-hover-1:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-2 {
+}
+
+#id-hover-2:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-3 {
+}
+
+#id-hover-3:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-tags-1 {
+}
+
+#id-hover-tags-1:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-tags-2 {
+}
+
+#id-hover-tags-2:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-username {
+}
+
+#id-hover-username {
+}
+
+#id-hover-username:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-share {
+}
+
+#id-hover-share:hover {
+  background-color: #ededed !important;
+  text-decoration: none;
+}
+
+#id-hover-favorite {
+}
+
+#id-hover-favorite:hover {
+  background-color: #ededed !important;
+}
+
+#id-hover-test-1 {
+}
+
+#id-hover-test-1:hover {
+  background-color: black;
+}
+
+#id-hover-tags-222 {
+}
+
+#id-hover-tags-222:hover {
+  background-color: black;
+  text-decoration: none;
+}
+
+#id-hover-3dots {
+}
+
+#id-hover-3dots:hover {
+  background-color: #ededed !important;
+}
+
+#add-hover-id {
+}
+
+#add-hover-id:hover {
+  /*border: 1px solid black !important;*/
+  /*mouse: pointer;*/
+  cursor: pointer;
+  background-color: #e8e8e8 !important;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,12 @@
+#add-user-click{
+    visibility:hidden;
+    transform:0.3s;
+}
+
+#all:hover{
+    color:black;
+}
+
+#green-box:hover{
+	background-color:#ffffff;
+}

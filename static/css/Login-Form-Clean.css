@@ -1,0 +1,142 @@
+.login-clean {
+  background: #f1f7fc;
+  padding: 80px 0;
+}
+
+.login-clean form {
+  /*max-width: 320px;*/
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.login-clean .illustration {
+  text-align: left;
+  padding: 0 0 20px;
+  /*font-size: 100px;*/
+  /*color: rgb(244,71,107);*/
+}
+
+.login-clean form .form-control {
+  background: #f7f9fc;
+  border: none;
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  /*text-indent: 8px;*/
+  height: 42px;
+  /*width: 450px;*/
+}
+
+.login-clean form .btn-primary {
+  background: #f4476b;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none !important;
+}
+
+.login-clean form .btn-primary:hover, .login-clean form .btn-primary:active {
+  background: #eb3b60;
+}
+
+.login-clean form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.login-clean form .forgot {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.login-clean form .forgot:hover, .login-clean form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.fa.fa-linkedin-square:hover {
+  color: #0077B5 !important;
+  cursor: pointer;
+}
+
+.material-icons:hover {
+  .icon.ion-android-mail: color: rgb(133,135,150) !important;
+  cursor: pointer;
+  color: #C6C6C6 !important;
+}
+
+#myChart1 {
+  position: absolute;
+  left: 17%;
+  top: 32%;
+}
+
+#ye:hover {
+  border-bottom: 1px solid #C6C6C6 !important;
+  cursor: pointer;
+}
+
+.fas.fa-user-plus:hover {
+  color: #C6C6C6 !important;
+  cursor: pointer;
+}
+
+#num_in_tag_hover:hover {
+  background-color: #C6C6C6 !important;
+  cursor: pointer;
+}
+
+.far.fa-star:hover {
+  color: #C6C6C6 !important;
+  cursor: pointer;
+}
+
+#cal-date-1:onclick {
+  border: 2px solid black;
+}
+
+#cal-date-1:active {
+  border: 2px solid black;
+}
+
+.col-md-3:hover {
+  cursor: pointer;
+}
+
+.la.la-arrow-circle-o-right:hover {
+  cursor: pointer;
+  color: #d4f48f !important;
+}
+
+.la.la-remove:hover {
+  cursor: pointer;
+  color: #C6C6C6 !important;
+}
+
+.icon.ion-android-arrow-back:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#none-test:hover {
+  cursor: auto;
+}
+
+.far.fa-check-circle:hover {
+  cursor: pointer;
+  color: #d4f48f !important;
+}
+
