@@ -1,0 +1,29 @@
+@media (max-width: 800px) {
+  .fas.fa-long-arrow-alt-right {
+    margin-left: -12% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    color: white !important;
+    max-width: 7% !important;
+    margin: 5% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    color: white !important;
+    max-width: 15% !important;
+    margin: 5% !important;
+    padding-left: 2.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbarResponsive {
+    margin-top: 300px !importnat;
+  }
+}
+

@@ -1,38 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: #000000 !important;color: rgb(0,0,0);overflow: hidden;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>PRM</title>
+    <title>Web to Audio</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
     <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome-all.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='fonts/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/ionicons.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/line-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icons.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome5-overrides.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/Login-Form-Clean-1.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/Login-Form-Clean.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/Social-Icons.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/Team-Boxed.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Loading-Page-Animation-Style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Navigation-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Navigation-with-Button.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/untitled-1.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/untitled.css') }}">
 </head>
 
-<body>
-    <div class="login-clean" style="height: 949px !important;">
-        <form method="post" style="margin-top: 100px;">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a></form>
-    </div>
+<body id="page-top" style="background-color: rgb(0,0,0);">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: black;border-bottom: 1px solid;z-index: 10 !important;">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: black;color: rgb(255,255,255);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img src="{{url_for('static',filename='img/3_lines_new.png')}}" style="width:100% !important"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+                {% if validID %}
+                <span class="navbar-text actions"> <a class="login" href="{{url_for('downloads',validID=validID)}}" style="color: white;font-family: Staatliches, cursive;text-shadow: -3px 3px 1px rgba(61,193,145,.3);font-size: 24px;">&nbsp;DOWNLOADS</a></span>
+                {% else %}
+                <span class="navbar-text actions"> <a class="login" href="{{url_for('fork')}}" style="color: white;font-family: Staatliches, cursive;text-shadow: -3px 3px 1px rgba(61,193,145,.3);font-size: 24px;">&nbsp;DOWNLOADS</a></span>
+                {% endif %}
+
+            </div>
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="intro-body" style="background-image: url(&quot;none&quot;);background-color: #000000;filter: blur(0px) brightness(101%);opacity: 1;height: 100%;width: 100%;background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;min-height: 100% !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto" style="margin-left: 0 !important;text-align: left;">
+                        <h1 class="brand-heading" style="margin-left: 0 !important;filter: brightness(200%);font-family: Staatliches, cursive;font-weight: 100;font-size: 166px;opacity: 1;text-align: left;text-shadow: -7px 7px 0px rgba(61,193,145,0.3);line-height: 0.9;color: rgb(255,255,255);">Web <br>to Audio</h1>
+                        <div><button class="btn btn-primary" type="button" onclick="changePlaceholder(0)" style="font-family: Staatliches, cursive;color: rgb(255,255,255);background-color: transparent !important;border: none;text-shadow: -3px 3px 1px rgba(61,193,145,.5);padding-top: 0px;padding-bottom: 0px;padding-left: 2px;padding-right: 2px;margin-right: 10px !important;text-align: left;width: auto !important;margin-left: auto;margin-right: auto;display: inline-block;">Link</button>
+                            <button
+                                class="btn btn-primary" type="button" onclick="changePlaceholder(1)" style="font-family: Staatliches, cursive;color: rgb(255,255,255);background-color: transparent !important;border: none;text-shadow: -3px 3px 1px rgba(61,193,145,.5);padding-top: 0px;padding-bottom: 0px;padding-right: 0px !important;padding-left: 0px;text-align: left;max-width: 35%;display: inline-block;">CTRL-V</button>
+                        </div>
+                        <div class="btn-group" role="group" style="color: rgb(0,0,0);margin-bottom: 3%;"></div>
+
+
+                        <form id="form-submit" method="post" style="margin-top:-3% !important">
+                        	<input id="input-id" class="form-control" type="url" name="url" placeholder="https://" style="width: 70%;margin-left: 0 !important;margin-right: auto;border-radius: 5px 5px 5px 5px;/*box-shadow: -3px 3px 0px #fff;*/font-family: Staatliches, cursive;/*border-bottom: 4px white;*/background-color: rgba(0,0,0,0.3);color: white;padding: 1%;border-color: white;/*border-top: none;*//*border-left: none;*//*border-right: none;*/padding-right: 7%;height: 10%;display: inline;background-image: url(&quot;none&quot;);margin-top: 1.5%;">
+                        	
+                        	<i class="icon ion-android-close" style="color:white !important"></i>
+                        	<i
+                            class="fas fa-long-arrow-alt-right" onclick="audioBlast();" style="color:white !important;margin-left: -9%;font-size: 22px;position: inherit;cursor: pointer;transition: 0.2s;font-size: 20px;padding-left: 3%;padding-right: 3%;padding-top: 1%;padding-bottom: 1%;"></i>
+                        </form>
+
+                        <p style="font-family: Staatliches, cursive;color:red;font-size:10px;margin-top:4px">{{msg}}</p>
+                        <script>
+                        	function audioBlast(){
+                        		document.getElementById('form-submit').submit();
+                        	}
+                        	function changePlaceholder(x){
+                        		if (x == 1){
+                        			document.getElementById('input-id').placeholder = "Paste something here...";
+                        			document.getElementById('input-id').type = "text";
+                        		}
+                        		else if (x == 0){
+                        			document.getElementById('input-id').placeholder = "https://";
+                        			document.getElementById('input-id').type = "url";
+                        		}
+                        	}
+                    	</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="position: fixed;bottom: 0;margin-left: auto;margin-right: auto;width: 100%;background-color: rgb(0,0,0);">
+        <div class="container"><audio id="audio-container" controls="" style="margin-left: auto;margin-right: auto;width: 80%;">
+        	<source src="{{audio_play}}" type="audio/mpeg">
+        </audio></div>
+    </nav>
+    <div class="map-clean"></div>
     <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="{{ url_for('static',filename='js/theme.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ url_for('static',filename='js/grayscale.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/Loading-Page-Animation-Style.js') }}"></script>
 </body>
 
 </html>

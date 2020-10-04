@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html style="background-color: #000000 !important;color: rgb(0,0,0);overflow: hidden;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Web to Audio</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Loading-Page-Animation-Style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Navigation-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Navigation-with-Button.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/untitled-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/untitled.css') }}">
+</head>
+
+<body id="page-top" style="background-color: rgb(0,0,0);">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: black;border-bottom: 1px solid;z-index: 10 !important;">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: black;color: rgb(255,255,255);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="filter: brightness(100%) grayscale(0%) invert(0%);"><img src="{{url_for('static',filename='img/3_lines_new.png')}}" style="width:100% !important"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul><span class="navbar-text actions"> <a class="login" href="{{url_for('index')}}" style="color: white;font-family: Staatliches, cursive;text-shadow: -3px 3px 1px rgba(61,193,145,.3);font-size: 24px;">MAIN</a></span></div>
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="intro-body" style="background-image: url(&quot;none&quot;);background-color: #000000;filter: blur(0px) brightness(101%);opacity: 1;height: 100%;width: 100%;background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;min-height: 100% !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto" style="margin-left: 0 !important;text-align: left;">
+                        <h1 class="brand-heading" style="margin-left: 0 !important;filter: brightness(200%);font-family: Staatliches, cursive;font-weight: 100;font-size: 166px;opacity: 1;text-align: left;text-shadow: -7px 7px 0px rgba(61,193,145,0.3);line-height: 0.9;color: rgb(255,255,255);">EMAIL VERIFICATION</h1><small class="form-text text-muted" style="font-family: Staatliches, cursive;color: white !important;font-size: 11px;padding-left: 1px;margin-bottom: 2%;">We've sent you an email verification link.<br>Once you've clicked on it, login to continue.</small>
+                        <div>
+                            <a href="{{url_for('login')}}"><button class="btn btn-primary" type="button" style="font-family: Staatliches, cursive;color: rgb(255,255,255);background-color: transparent !important;border: none;text-shadow: -3px 3px 1px rgba(61,193,145,.5);padding-top: 0px;padding-bottom: 0px;padding-left: 2px;padding-right: 2px;margin-right: 10px !important;text-align: left;width: auto !important;margin-left: auto;margin-right: auto;display: inline-block;">LOGIN</button></a>
+                            <a href="{{url_for('email_verify',validID=validID)}}"><button class="btn btn-primary" type="button" style="font-family: Staatliches, cursive;color: rgb(255,255,255);background-color: transparent !important;border: none;text-shadow: -3px 3px 1px rgba(61,193,145,.5);padding-top: 0px;padding-bottom: 0px;padding-left: 2px;padding-right: 2px;margin-right: 10px !important;text-align: left;width: auto !important;margin-left: auto;margin-right: auto;display: inline-block;">RESEND</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="map-clean"></div>
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ url_for('static',filename='js/grayscale.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/Loading-Page-Animation-Style.js') }}"></script>
+</body>
+
+</html>
